@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Academic Homepage</title>
+    <title>Zhiwei - Exploring the World </title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- Scroll Progress -->
     <div class="scroll-progress" id="scrollProgress"></div>
@@ -15,7 +17,7 @@
         <div class="nav-container">
             <a href="#home" class="logo">
                 <img src="images/back.jpg" alt="Logo" class="logo-img">
-                <span>Your Name</span>
+                <span>Zhiwei Yu</span>
             </a>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -24,10 +26,8 @@
             </div>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#about">About Me</a></li>
                 <li><a href="#publications">Publications</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -41,13 +41,14 @@
                     <img src="images/back.jpg" alt="Profile" class="profile-img">
                 </div>
                 <div class="hero-text">
-                    <h1>Your Full Name</h1>
-                    <div class="title">Assistant Professor / Associate Professor</div>
-                    <div class="affiliation">Department of Computer Science<br>University Name</div>
+                    <h1>Zhiwei Yu</h1>
+                    <div class="title">Senior Researcher</div>
+                    <div class="affiliation">Multimodal Interaction Research Center<br>BAAI</div>
                     <div class="contact-links">
-                        <a href="mailto:your.email@university.edu" class="contact-link">Email</a>
-                        <a href="#" class="contact-link">Google Scholar</a>
-                        <a href="#" class="contact-link">GitHub</a>
+                        <a href="mailto:yuzhiwei.v@gmailcom" class="contact-link">Email</a>
+                        <a href="https://scholar.google.com/citations?user=h6rZDMkAAAAJ" class="contact-link">Google
+                            Scholar</a>
+                        <a href="https://github.com/yuzhiwei-v" class="contact-link">GitHub</a>
                     </div>
                 </div>
             </div>
@@ -55,23 +56,19 @@
 
         <!-- About Section -->
         <section id="about" class="section about">
-            <h2 class="section-title">About</h2>
-            <div class="about-content">
-                <div class="bio">
-                    I am an Assistant/Associate Professor in the Department of Computer Science at University Name. 
-                    My research focuses on machine learning, artificial intelligence, and their applications in 
-                    real-world problems. I received my Ph.D. in Computer Science from University Name in Year.
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    I design smart systems—digital or embodied— to turn real-world chaos into innovation—where AI,
+                    product, and business collide.
                 </div>
-                <div class="research-interests">
+                <div class="about-interests">
                     <h3>Research Interests</h3>
-                    <div class="interests-list">
-                        <span class="interest-tag">Machine Learning</span>
-                        <span class="interest-tag">Deep Learning</span>
-                        <span class="interest-tag">Natural Language Processing</span>
-                        <span class="interest-tag">Computer Vision</span>
-                        <span class="interest-tag">Artificial Intelligence</span>
-                        <span class="interest-tag">Data Mining</span>
-                    </div>
+                    <ul class="interests-list">
+                        <li>Multimodal Interaction</li>
+                        <li>Embodied AI</li>
+                        <li>Knowledge Computing</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -79,126 +76,98 @@
         <!-- Publications Section -->
         <section id="publications" class="section publications">
             <h2 class="section-title">Selected Publications</h2>
-            
+
             <div class="publications-container">
-                <!-- Please replace with your top 10 cited papers from Google Scholar -->
                 <div class="publication-item">
-                    <div class="pub-title">Paper Title 1: Your Most Cited Paper</div>
-                    <div class="pub-authors"><strong>Your Name</strong>, Co-author 1, Co-author 2</div>
-                    <div class="pub-venue">Conference/Journal Name, Year</div>
-                    <div class="pub-citation">Cited by XXX</div>
+                    <div class="pub-title">TIARA: Multi-grained Retrieval for Robust Question Answering over Large
+                        Knowledge Bases</div>
+                    <div class="pub-abstract">
+                        Pre-trained language models (PLMs) have shown their effectiveness in multiple scenarios.
+                        However, KBQA remains challenging, especially regarding coverage and generalization settings.
+                        This is due to two main factors: i) understanding the semantics of both questions and relevant
+                        knowledge from the KB; ii) generating executable logical forms with both semantic and syntactic
+                        correctness. In this paper, we present a new KBQA model, TIARA, which addresses those issues by
+                        applying multi-grained retrieval to help the PLM focus on the most relevant KB contexts, viz.,
+                        entities, exemplary logical forms, and schema items. Moreover, constrained decoding is used to
+                        control the output space and reduce generation errors. Experiments over important benchmarks
+                        demonstrate the effectiveness of our approach. TIARA outperforms previous SOTA, including those
+                        using PLMs or oracle entity annotations, by at least 4.1 and 1.1 F1 points on GrailQA and
+                        WebQuestionsSP, respectively.
+                    </div>
+                    <div class="pub-venue">EMNLP, 2022</div>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2210.12925" class="pub-link">Paper</a>
+                        <a href="https://github.com/microsoft/KC/tree/main/papers/TIARA" class="pub-link">Code</a>
+                    </div>
                 </div>
 
                 <div class="publication-item">
-                    <div class="pub-title">Paper Title 2: Second Most Cited Paper</div>
-                    <div class="pub-authors"><strong>Your Name</strong>, Co-author 1, Co-author 2</div>
-                    <div class="pub-venue">Conference/Journal Name, Year</div>
-                    <div class="pub-citation">Cited by XXX</div>
+                    <div class="pub-title">ReTraCk: A Flexible and Efficient Framework for Knowledge Base Question
+                        Answering</div>
+                    <div class="pub-abstract">
+                        We present Retriever-Transducer-Checker (ReTraCk), a neural semantic parsing framework for large
+                        scale knowledge base question answering (KBQA). ReTraCk is designed as a modular framework to
+                        maintain high flexibility. It includes a retriever to retrieve relevant KB items efficiently, a
+                        transducer to generate logical form with syntax correctness guarantees and a checker to improve
+                        transduction procedure. ReTraCk is ranked at top1 overall performance on the GrailQA leaderboard
+                        and obtains highly competitive performance on the typical WebQuestionsSP benchmark. Our system
+                        can interact with users timely, demonstrating the efficiency of the proposed framework.
+                    </div>
+                    <div class="pub-venue">ACL, 2021</div>
+                    <div class="pub-links">
+                        <a href="https://aclanthology.org/2021.acl-demo.39/" class="pub-link">Paper</a>
+                        <a href="https://github.com/microsoft/KC/tree/main/papers/ReTraCk" class="pub-link">Code</a>
+                    </div>
                 </div>
 
                 <div class="publication-item">
-                    <div class="pub-title">Paper Title 3: Third Most Cited Paper</div>
-                    <div class="pub-authors">Co-author 1, <strong>Your Name</strong>, Co-author 2</div>
-                    <div class="pub-venue">Conference/Journal Name, Year</div>
-                    <div class="pub-citation">Cited by XXX</div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="pub-title">Paper Title 4: Fourth Most Cited Paper</div>
-                    <div class="pub-authors"><strong>Your Name</strong>, Co-author 1, Co-author 2, Co-author 3</div>
-                    <div class="pub-venue">Conference/Journal Name, Year</div>
-                    <div class="pub-citation">Cited by XXX</div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="pub-title">Paper Title 5: Fifth Most Cited Paper</div>
-                    <div class="pub-authors">Co-author 1, <strong>Your Name</strong>, Co-author 2</div>
-                    <div class="pub-venue">Conference/Journal Name, Year</div>
-                    <div class="pub-citation">Cited by XXX</div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="pub-title">Paper Title 6: Sixth Most Cited Paper</div>
-                    <div class="pub-authors"><strong>Your Name</strong>, Co-author 1</div>
-                    <div class="pub-venue">Conference/Journal Name, Year</div>
-                    <div class="pub-citation">Cited by XXX</div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="pub-title">Paper Title 7: Seventh Most Cited Paper</div>
-                    <div class="pub-authors"><strong>Your Name</strong>, Co-author 1, Co-author 2</div>
-                    <div class="pub-venue">Conference/Journal Name, Year</div>
-                    <div class="pub-citation">Cited by XXX</div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="pub-title">Paper Title 8: Eighth Most Cited Paper</div>
-                    <div class="pub-authors">Co-author 1, Co-author 2, <strong>Your Name</strong></div>
-                    <div class="pub-venue">Conference/Journal Name, Year</div>
-                    <div class="pub-citation">Cited by XXX</div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="pub-title">Paper Title 9: Ninth Most Cited Paper</div>
-                    <div class="pub-authors"><strong>Your Name</strong>, Co-author 1, Co-author 2</div>
-                    <div class="pub-venue">Conference/Journal Name, Year</div>
-                    <div class="pub-citation">Cited by XXX</div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="pub-title">Paper Title 10: Tenth Most Cited Paper</div>
-                    <div class="pub-authors"><strong>Your Name</strong>, Co-author 1</div>
-                    <div class="pub-venue">Conference/Journal Name, Year</div>
-                    <div class="pub-citation">Cited by XXX</div>
+                    <div class="pub-title">A Neural Approach to Pun Generation</div>
+                    <div class="pub-abstract">
+                        Automatic pun generation is an interesting and challenging text generation task. Previous
+                        efforts rely on templates or laboriously manually annotated pun datasets, which heavily
+                        constrains the quality and diversity of generated puns. Since sequence-to-sequence models
+                        provide an effective technique for text generation, it is promising to investigate these models
+                        on the pun generation task. In this paper, we propose neural network models for homographic pun
+                        generation, and they can generate puns without requiring any pun data for training. We first
+                        train a conditional neural language model from a general text corpus, and then generate puns
+                        from the language model with an elaborately designed decoding algorithm. Automatic and human
+                        evaluations show that our models are able to generate homographic puns of good readability and
+                        quality.
+                    </div>
+                    <div class="pub-venue">ACL, 2018</div>
+                    <div class="pub-links">
+                        <a href="https://aclanthology.org/P18-1153/" class="pub-link">Paper</a>
+                        <a href="https://github.com/ArleneYuZhiwei/Pun-Generation" class="pub-link">Code</a>
+                    </div>
                 </div>
 
                 <div class="learn-more-container">
-                    <a href="#" class="learn-more-btn">Learn More</a>
+                    <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=h6rZDMkAAAAJ"
+                        class="learn-more-btn">Learn More</a>
                 </div>
             </div>
         </section>
 
-        <!-- News Section -->
-        <section id="news" class="section news">
-            <h2 class="section-title">Recent News</h2>
-            
-            <div class="news-container">
-            
-            <div class="news-item">
-                <div class="news-date">January 2025</div>
-                <div class="news-content">Our paper on "Advanced Machine Learning Techniques" has been accepted at ICML 2025.</div>
-            </div>
-
-            <div class="news-item">
-                <div class="news-date">December 2024</div>
-                <div class="news-content">Invited to serve as a reviewer for AAAI 2025.</div>
-            </div>
-
-            <div class="news-item">
-                <div class="news-date">November 2024</div>
-                <div class="news-content">Gave a talk at the International AI Conference on "Future Directions in ML Research".</div>
-            </div>
-
-            <div class="news-item">
-                <div class="news-date">October 2024</div>
-                <div class="news-content">Started collaboration with Industry Partner on AI applications.</div>
+        <!-- Recruitment Section -->
+        <section class="section recruitment">
+            <h2 class="section-title">For Prospective Students</h2>
+            <div class="recruitment-content">
+                <p>I am always looking for motivated graduate students and postdocs to join my research group. If you
+                    are interested in machine learning research, please send me an email with your CV, research
+                    interests, and a brief description of your background.</p>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="footer">
             <div class="section">
-                <p><strong>Your Full Name</strong></p>
-                <p>Department of Computer Science, University Name</p>
-                <p>Address Line 1, Address Line 2</p>
-                <p>Email: your.email@university.edu | Phone: +1-XXX-XXX-XXXX</p>
-                
-                <div class="footer-links" style="margin-top: 20px;">
-                    <a href="#" class="footer-link">Google Scholar</a>
-                    <a href="#" class="footer-link">DBLP</a>
-                    <a href="#" class="footer-link">GitHub</a>
-                    <a href="#" class="footer-link">LinkedIn</a>
-                    <a href="#" class="footer-link">Twitter</a>
+                    <div class="hiring-info">
+                    <div class="hiring-title">🎓 Join Us</div>
+                    <div class="hiring-text">
+                        I am always looking for outstanding full-time research interns—people with a strong research
+                        mindset, sharp analytical skills, and hands-on system-building expertise—who are eager to bridge
+                        theory and practice. To apply, please reach out to me with your CV to yuzhiwei.v@gmail.com with "Embodied AI Internship Application" in the email subject line.
+                    </div>
                 </div>
             </div>
         </section>
@@ -206,4 +175,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>

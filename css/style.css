@@ -262,21 +262,45 @@
         }
 
         .bio {
+            margin-bottom: 0;
+            background: none;
+            padding: 0;
+            border-radius: 0;
+            box-shadow: none;
+            border: none;
+        }
+
+        /* About section grid layout */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .about-text {
             font-size: 1.1rem;
             line-height: 1.8;
             color: #34495e;
-            margin-bottom: 40px;
-            background: rgba(255, 255, 255, 0.7);
             padding: 30px;
+            background: rgba(255, 255, 255, 0.7);
             border-radius: 12px;
             box-shadow: 0 3px 15px rgba(139, 69, 193, 0.08);
             border: 1px solid rgba(139, 69, 193, 0.05);
+            text-align: left;
         }
 
+        .about-interests {
+            text-align: left;
+        }
+
+        /* 调整研究兴趣样式 */
         .research-interests {
-            background: linear-gradient(135deg, #ffffff 0%, #faf9fc 100%);
-            padding: 35px;
+            padding: 30px;
             border-radius: 12px;
+            background: rgba(255, 255, 255, 0.7);
             box-shadow: 0 5px 25px rgba(139, 69, 193, 0.1);
             border: 1px solid rgba(139, 69, 193, 0.08);
         }
@@ -286,29 +310,32 @@
             margin-bottom: 20px;
             font-size: 1.3rem;
             font-weight: 500;
+            text-align: center;  /* Center the heading */
         }
 
         .interests-list {
             display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
+            flex-direction: column;  /* 改为纵向排列 */
+            align-items: flex-start; /* 左对齐 */
+            gap: 12px;              /* 项目间距 */
+            list-style: none;
+            padding: 0;
         }
 
-        .interest-tag {
-            background: linear-gradient(135deg, #f3e7f9, #faf7fc);
+        .interests-list li {
+            position: relative;
+            padding-left: 20px;
+            color: #34495e;
+            font-size: 1.1rem;
+            width: 100%;           /* 确保占据整行 */
+            line-height: 1.6;
+        }
+
+        .interests-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
             color: #8b45c1;
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            border: 1px solid rgba(139, 69, 193, 0.15);
-            transition: all 0.3s ease;
-        }
-
-        .interest-tag:hover {
-            background: linear-gradient(135deg, #8b45c1, #a855f7);
-            color: white;
-            transform: translateY(-1px);
         }
 
         /* Publications Section */
@@ -334,7 +361,7 @@
 
         .publication-item {
             background: linear-gradient(135deg, #ffffff 0%, #fdfcff 100%);
-            padding: 30px;
+            padding: 35px;  /* Slightly more padding to accommodate abstract */
             margin-bottom: 25px;
             border-radius: 12px;
             border-left: 3px solid #8b45c1;
@@ -362,71 +389,14 @@
             border-left-color: #a855f7;
         }
 
-        .learn-more-container {
-            text-align: center;
-            margin-top: 50px;
-            padding: 40px;
-            background: linear-gradient(135deg, rgba(139, 69, 193, 0.03), rgba(168, 85, 247, 0.03));
-            border-radius: 12px;
-            border: 1px dashed rgba(139, 69, 193, 0.2);
+        /* Publication links styling */
+        .pub-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 8px;
         }
 
-        .learn-more-btn {
-            display: inline-block;
-            padding: 15px 35px;
-            background: linear-gradient(135deg, #8b45c1, #a855f7);
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(139, 69, 193, 0.25);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .learn-more-btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transition: left 0.5s ease;
-        }
-
-        .learn-more-btn:hover::before {
-            left: 100%;
-        }
-
-        .learn-more-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(139, 69, 193, 0.35);
-        }
-
-        .pub-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 8px;
-            line-height: 1.4;
-        }
-
-        .pub-authors {
-            color: #7f8c8d;
-            margin-bottom: 5px;
-            font-size: 0.95rem;
-        }
-
-        .pub-venue {
-            color: #8b45c1;
-            font-weight: 500;
-            font-size: 0.9rem;
-            margin-bottom: 8px;
-        }
-
-        .pub-citation {
+        .pub-link {
             background: linear-gradient(135deg, #f3e7f9, #faf7fc);
             color: #8b45c1;
             padding: 4px 8px;
@@ -434,6 +404,64 @@
             font-size: 0.85rem;
             display: inline-block;
             border: 1px solid rgba(139, 69, 193, 0.15);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .pub-link:hover {
+            background: linear-gradient(135deg, #8b45c1, #a855f7);
+            color: white;
+            transform: translateY(-1px);
+        }
+
+        .learn-more-container {
+            text-align: center;
+            margin-top: 20px;       /* Reduced from 30px */
+            margin-bottom: 0;       /* Remove bottom margin */
+            padding: 0;            /* Remove padding */
+        }
+
+        .learn-more-btn {
+            display: inline-block;
+            padding: 8px 20px;  /* Smaller padding */
+            background: linear-gradient(135deg, #f3e7f9, #faf7fc);
+            color: #8b45c1;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 0.9rem;  /* Smaller font size */
+            font-weight: 500;
+            border: 1px solid rgba(139, 69, 193, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .learn-more-btn:hover {
+            background: linear-gradient(135deg, #8b45c1, #a855f7);
+            color: white;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(139, 69, 193, 0.2);
+        }
+
+        .pub-title {
+            font-size: 1.2rem;  /* Slightly larger */
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .pub-abstract {
+            font-size: 0.95rem;
+            color: #4a5568;
+            margin-bottom: 12px;
+            line-height: 1.5;
+            font-weight: normal;
+        }
+
+        .pub-venue {
+            color: #8b45c1;
+            font-weight: 500;
+            font-size: 1rem;  /* Slightly larger */
+            margin-bottom: 8px;
         }
 
         /* News Section */
@@ -515,6 +543,36 @@
             padding: 30px 0;
             position: relative;
             overflow: hidden;
+            padding-top: 15px;     /* Reduced from 30px */
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto 15px;  /* Reduced bottom margin */
+            margin-top: 0;         /* Remove top margin */
+        }
+
+        .hiring-info {
+            margin: 15px auto;  /* Reduced from 30px */
+            margin-top: 10px;      /* Reduced from 15px */
+            padding: 0;         /* Removed padding */
+            max-width: 800px;
+            background: none;   /* Removed background */
+        }
+
+        .hiring-title {
+            color: #8b45c1;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 12px;  /* Slightly reduced */
+            text-align: center;
+        }
+
+        .hiring-text {
+            color: #34495e;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: left;
         }
 
         .footer::before {
@@ -550,6 +608,11 @@
 
         .footer-link:hover {
             color: #8b45c1;
+        }
+
+        /* Recruitment Section */
+        .recruitment, .recruitment-content {
+            display: none;
         }
 
         /* Mobile Responsive */
@@ -626,6 +689,11 @@
                 padding: 12px 25px;
                 font-size: 0.9rem;
             }
+
+            .about-grid {
+        grid-template-columns: 1fr;  
+        gap: 20px;
+    }
         }
 
         /* Scroll Progress */
