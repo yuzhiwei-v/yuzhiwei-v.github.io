@@ -236,109 +236,47 @@
             background: linear-gradient(90deg, #8b45c1, #a855f7);
         }
 
-        /* About Section */
-        .about {
-            background: linear-gradient(135deg, #ffffff 0%, #fdfcff 100%);
-            position: relative;
-        }
+        /* About Section - Simplified */
+.about {
+    padding: 60px 0;
+}
 
-        .about::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(45deg, transparent 49%, rgba(139, 69, 193, 0.01) 50%, transparent 51%);
-            z-index: 0;
-        }
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 60px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #2c3e50;
+}
 
-        .about-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
+.about-text a {
+    color: #8b45c1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
 
-        .bio {
-            margin-bottom: 0;
-            background: none;
-            padding: 0;
-            border-radius: 0;
-            box-shadow: none;
-            border: none;
-        }
+.about-text a:hover {
+    color: #a855f7;
+}
 
-        /* About section grid layout */
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: start;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
+/* Remove unused classes */
+.about::before,
+.about-content,
+.about-grid,
+.bio,
+.about-interests,
+.research-interests {
+    display: none;
+}
 
-        .about-text {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #34495e;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.7);
-            border-radius: 12px;
-            box-shadow: 0 3px 15px rgba(139, 69, 193, 0.08);
-            border: 1px solid rgba(139, 69, 193, 0.05);
-            text-align: left;
-        }
+@media (max-width: 768px) {
+    .about-text {
+        padding: 0 30px;
+    }
+}
 
-        .about-interests {
-            text-align: left;
-        }
-
-        /* 调整研究兴趣样式 */
-        .research-interests {
-            padding: 30px;
-            border-radius: 12px;
-            background: rgba(255, 255, 255, 0.7);
-            box-shadow: 0 5px 25px rgba(139, 69, 193, 0.1);
-            border: 1px solid rgba(139, 69, 193, 0.08);
-        }
-
-        .research-interests h3 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-            font-size: 1.3rem;
-            font-weight: 500;
-            text-align: center;  /* Center the heading */
-        }
-
-        .interests-list {
-            display: flex;
-            flex-direction: column;  /* 改为纵向排列 */
-            align-items: flex-start; /* 左对齐 */
-            gap: 12px;              /* 项目间距 */
-            list-style: none;
-            padding: 0;
-        }
-
-        .interests-list li {
-            position: relative;
-            padding-left: 20px;
-            color: #34495e;
-            font-size: 1.1rem;
-            width: 100%;           /* 确保占据整行 */
-            line-height: 1.6;
-        }
-
-        .interests-list li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: #8b45c1;
-        }
-
-        /* Publications Section */
+/* Publications Section */
         .publications {
             background: linear-gradient(135deg, #faf9fc 0%, #f3e7f9 50%, #ffffff 100%);
             position: relative;
@@ -696,7 +634,52 @@
     }
         }
 
-        /* Scroll Progress */
+        /* widen left column and shift right column for visual balance */
+.about-grid {
+    max-width: 1100px;                  /* 更宽的容器让左右有更好比例 */
+    grid-template-columns: 1.3fr 0.9fr; /* 左宽右窄 */
+    gap: 48px;                          /* 增大间距以拉开视觉 */
+    align-items: center;
+}
+
+/* left text - a bit more breathing room */
+.about-text {
+    padding: 28px 40px 28px 0; /* 右侧去掉内边，左侧保留空间 */
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* ensure the right block sits a little to the right */
+.about-interests {
+    justify-self: end;          /* 在 grid 单元格内靠右 */
+    padding-left: 24px;         /* 额外右移的感觉 */
+    box-sizing: border-box;
+}
+
+/* control research block width so it doesn't grow too wide */
+.research-interests {
+    max-width: 420px;
+    width: 100%;
+}
+
+/* responsive: revert to single column on small screens */
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 900px;
+    }
+    .about-text {
+        padding: 18px 20px 0 20px;
+    }
+    .about-interests {
+        justify-self: stretch;
+        padding-left: 0;
+        align-items: stretch;
+    }
+}
+
+/* Scroll Progress */
         .scroll-progress {
             position: fixed;
             top: 60px;
