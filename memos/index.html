@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Memos by Zhiwei Yu on closed-loop intelligence, long-horizon interaction, memory, and adaptation."
+    />
+    <meta name="theme-color" content="#0b0612" />
+    <link rel="canonical" href="https://yuzhiwei-v.github.io/memos/" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230b0612'/%3E%3Ccircle cx='32' cy='32' r='18' fill='none' stroke='%23ad7bff' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%2382f6dc'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="./memos.css" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yuzhiwei-v.github.io/memos/" />
+    <meta property="og:title" content="Memos · Zhiwei Yu" />
+    <meta
+      property="og:description"
+      content="Working notes on closed-loop intelligence, long-horizon interaction, memory, and adaptation."
+    />
+    <title>Memos · Zhiwei Yu</title>
+  </head>
+  <body class="memo-body">
+    <a class="skip-link" href="#memo-content">Skip to memos</a>
+    <div class="aurora" aria-hidden="true"></div>
+
+    <header class="site-header shell">
+      <nav class="nav" aria-label="Memo navigation">
+        <a class="brand" href="../index.html" aria-label="Back to Zhiwei Yu home">
+          <span class="brand-orbit" aria-hidden="true"></span>
+          Zhiwei Yu
+        </a>
+        <div class="nav-links memo-nav-links">
+          <a class="memo-link" href="../index.html">
+            Homepage <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="memo-main shell" id="memo-content">
+      <section class="memo-hero">
+        <div class="memo-hero-copy">
+          <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> Memos</p>
+          <h1>Beyond <em>Static Intelligence</em></h1>
+        </div>
+      </section>
+
+      <div class="memo-layout">
+        <aside class="memo-index" aria-label="Memo index">
+          <p class="memo-index-label">Contents</p>
+          <ol>
+            <li><a href="#staying-effective"><span>01</span> Staying effective through change</a></li>
+            <li><a href="#generation-by-needs"><span>02</span> Generation by Needs</a></li>
+            <!-- Memory memo hidden until it is ready for publication.
+            <li><a href="#memory"><span>03</span> Memory across time</a></li>
+            -->
+          </ol>
+          <a class="memo-home-link" href="../index.html#work">Selected research <span aria-hidden="true">↗</span></a>
+        </aside>
+
+        <div class="memo-feed">
+          <article class="memo-entry" id="staying-effective">
+            <header>
+              <p class="memo-meta"><span>Memo 01</span><time datetime="2026-09">September 2026</time></p>
+              <h2>Intelligence that stays effective through change</h2>
+              <p class="memo-deck">The real test is not completing a task once, but remaining effective as the world changes.</p>
+            </header>
+            <div class="memo-preview">
+              <p>
+                A system is not intelligent merely because it can reproduce an answer under a fixed distribution. In a
+                dynamic world, intelligence means forming valid actions under uncertainty—and allowing
+                the consequences of those actions to continually correct what the system believes and does next.
+              </p>
+              <blockquote>
+                Intelligence is the ability to remain effective as the world changes.
+              </blockquote>
+              <p>
+                No model can fully internalize an environment whose people, objects, constraints, and causal structure
+                keep changing. A model may provide powerful priors, but a lifelong agent cannot operate from those
+                priors alone. It must stay coupled to the world through a closed loop of grounding, execution,
+                verification, and revision.
+              </p>
+            </div>
+
+            <div class="memo-fulltext" id="memo-01-full" hidden>
+              <h3><span>01</span> Grounding: locate intelligence in the present world</h3>
+              <p>
+                Grounding is more than recognizing what is visible. The system must estimate the current state of the
+                world, identify what actions are actually afforded, and distinguish correlation from causal influence.
+                It needs to know not only that an object exists, but whether it can be moved now, what else that movement
+                will affect, and which assumptions remain uncertain. Grounding turns abstract capability into a belief
+                about this particular situation—a belief that can be tested by action.
+              </p>
+
+              <h3><span>02</span> Experience: convert interaction into evidence</h3>
+              <p>
+                Long-horizon tasks make every action an intervention. Execution changes the state; verification compares
+                the observed result with the intended effect; feedback exposes what the agent misunderstood. A useful
+                lifelong agent does not discard this history after an episode. It turns outcomes into updated beliefs,
+                memories, and reusable skills, so that a failed attempt can become supervision and a successful recovery
+                can become a future strategy.
+              </p>
+              <p>
+                This is why closed-loop improvement matters more than isolated success. The agent should become better
+                within the task as new evidence arrives, preserving continuity across many steps instead of repeatedly
+                solving each moment from scratch.
+              </p>
+
+              <h3><span>03</span> Adaptation: make experience endure</h3>
+              <p>
+                Experience becomes valuable only when it continues to shape action. Adaptation must carry what was
+                learned across tasks, across time, and across individuals without freezing it into a brittle rule. The
+                goal is durable change: retaining causal knowledge and useful skills while remaining ready to revise
+                them when the environment or the person changes.
+              </p>
+              <p>
+                A lifelong agent therefore improves through a continuing loop: ground itself in the present world, act
+                and verify over long horizons, consolidate the result into experience, and adapt that experience to the
+                next situation. Intelligence is not a static property stored inside a model. It is a relationship with a
+                changing world that must be renewed through interaction.
+              </p>
+            </div>
+            <button class="memo-toggle" type="button" aria-expanded="false" aria-controls="memo-01-full">
+              <span class="memo-toggle-label">Read More</span>
+              <span class="memo-toggle-icon" aria-hidden="true"></span>
+            </button>
+          </article>
+
+          <article class="memo-entry" id="generation-by-needs">
+            <header>
+              <p class="memo-meta"><span>Memo 02</span><time datetime="2026-09">September 2026</time></p>
+              <h2>Generation by Needs</h2>
+              <p class="memo-deck">Don’t generate when you can judge, estimate, or verify.</p>
+            </header>
+            <div class="memo-preview">
+              <p>
+                Embodied agents increasingly rely on LLMs and VLMs for components that do not inherently require
+                open-ended generation: state recognition, action selection, success detection, safety checking,
+                routing, ranking, and memory retrieval. Generation by Needs asks which of these components can be
+                reformulated as efficient judgment, estimation, and verification problems.
+              </p>
+              <blockquote>Use generation only when the decision space cannot be represented efficiently.</blockquote>
+              <p>
+                The aim is not merely to make a generative model smaller. It is to determine which parts of intelligence
+                fundamentally require generation and which can be reduced to fast, stable decision-making. Lightweight
+                models should form the default control path; expensive generation should be invoked only when
+                uncertainty or an out-of-distribution state makes it necessary.
+              </p>
+            </div>
+            <div class="memo-fulltext" id="memo-02-full" hidden>
+              <h3><span>01</span> From generation to decision</h3>
+              <p>
+                Many apparently generative modules have a constrained output space. Once that space is made explicit,
+                the problem often becomes selection, prediction, scoring, or verification rather than decoding.
+              </p>
+              <ul class="memo-list">
+                <li><strong>State understanding:</strong> classify or rank the current scene state and its transition.</li>
+                <li><strong>Value estimation:</strong> replace reasoning-heavy scoring with a compact value or reward model.</li>
+                <li><strong>Outcome verification:</strong> predict whether an action succeeded with a lightweight verifier.</li>
+                <li><strong>Action selection:</strong> choose the next primitive from an available skill library instead of generating it.</li>
+                <li><strong>Transition prediction:</strong> infer changes such as <em>Door: Closed → Open</em> directly from observations.</li>
+                <li><strong>Memory selection:</strong> retrieve and score relevant experience instead of reasoning over the full history.</li>
+              </ul>
+
+              <h3><span>02</span> Why judgment, estimation, and verification?</h3>
+              <p>
+                A discriminative module can make one decision in a single forward pass. In a high-frequency control loop,
+                lower latency is not only an efficiency gain: it allows the agent to observe, verify, and recover more
+                often. Smaller decision models can also offer higher throughput, lower inference cost, more stable
+                outputs, and easier deployment on edge devices and real robots.
+              </p>
+              <p>
+                The tradeoff is flexibility. This formulation requires a reasonably defined decision or action space,
+                task-specific positive and negative supervision, and reliable detection of unseen states. Classification
+                boundaries may fail under distribution shift, so open-ended planning and novel instruction following
+                should remain available when the fast path is uncertain.
+              </p>
+
+              <aside class="verification-note" role="note" aria-label="A note on verification">
+                <p class="verification-note-label">Concept note · Verification</p>
+                <p class="verification-note-title">Simple in principle. Still unresolved in practice.</p>
+                <p>
+                  Verification sounds straightforward: compare the intended outcome with what actually happened, then
+                  decide whether an action succeeded. Yet current systems do not do this reliably. Real verification
+                  must ground partial observations, distinguish execution failure from environmental change, calibrate
+                  uncertainty, and recognize when the available evidence is insufficient. It is therefore not a solved
+                  utility module, but a first-class research problem for closed-loop agents.
+                </p>
+              </aside>
+
+              <h3><span>03</span> Embodied demonstrations</h3>
+              <p>
+                With privileged state and transition information, decision models can act quickly in simulation and
+                generalize across tasks without repeatedly invoking open-ended generation. The unresolved challenge is
+                the real world: useful information is partial, noisy, delayed, and rarely given in a form that a verifier
+                or classifier can directly consume. How an embodied system can acquire reliable decision evidence from
+                interaction remains an open problem.
+              </p>
+              <p>
+                One direction is to build hierarchical decision architectures that decompose a difficult judgment into
+                progressively grounded decisions, improving accuracy without giving up speed. Parallel evaluation and
+                compressed state representations may further expand the capability boundary of decision models by
+                considering more evidence within the same latency and compute budget.
+              </p>
+
+              <figure class="memo-video-slot">
+                <video class="memo-video" controls preload="metadata" playsinline aria-label="JEV for robotics demo video">
+                  <source src="../assets/videos/jev-for-robotics.mp4" type="video/mp4" />
+                  Your browser does not support embedded video.
+                </video>
+                <figcaption>JEV for robotics</figcaption>
+              </figure>
+
+              <blockquote>How much generation does an embodied agent actually need?</blockquote>
+              <p>
+                Generation by Needs treats generation as a scarce capability rather than a default interface. The
+                resulting design principle is simple: <strong>decide, don’t decode—until the situation truly demands it.</strong>
+              </p>
+            </div>
+            <button class="memo-toggle" type="button" aria-expanded="false" aria-controls="memo-02-full">
+              <span class="memo-toggle-label">Read More</span>
+              <span class="memo-toggle-icon" aria-hidden="true"></span>
+            </button>
+          </article>
+
+          <!-- Memory memo hidden until it is ready for publication.
+          <article class="memo-entry" id="memory">
+            <header>
+              <p class="memo-meta"><span>Memo 03</span><time datetime="2026-09">September 2026</time></p>
+              <h2>Memory Is How Intelligence Persists Through Time</h2>
+              <p class="memo-deck">An agent must remember not only what happened, but what it changed.</p>
+            </header>
+            <div class="memo-preview">
+              <p>
+                Physical interaction unfolds across time. Objects leave view, completed steps continue to constrain the
+                task, mistakes create obligations, and other actors change the world. An agent therefore needs more than
+                a larger context window: it needs different forms of memory for task progress, world state, causal
+                interaction knowledge, and consequences that still matter now.
+              </p>
+            </div>
+            <div class="memo-fulltext" id="memo-03-full" hidden>
+              <p>
+                Causal memory gives the agent reusable knowledge of action preconditions and effects: what must be true
+                before an action, and what should change afterward. It supports reasoning from cause to effect to plan
+                ahead, and from effect back to cause to explain a failure, recover from it, or uncover a missing
+                prerequisite. Long-horizon behavior depends on both directions.
+              </p>
+              <p>
+                Working memory makes this knowledge actionable. Instead of replaying a long and redundant visual
+                history, it should compress interaction into the task-relevant state: what has changed, what has been
+                completed, what remains uncertain, and which errors are still unresolved. Good compression helps an
+                agent detect deviation, correct itself, and resume the task without repeating the past.
+              </p>
+              <blockquote>Memory should not reproduce the past. It should preserve the consequences that still govern the next action.</blockquote>
+              <p>
+                Physical intelligence therefore needs a portfolio of memories: causal knowledge for transfer, episodic
+                evidence for traceability, and compact working state for control. Their value is measured not by how much
+                they store, but by whether they keep action grounded as the world changes.
+              </p>
+            </div>
+            <button class="memo-toggle" type="button" aria-expanded="false" aria-controls="memo-03-full">
+              <span class="memo-toggle-label">Read More</span>
+              <span class="memo-toggle-icon" aria-hidden="true"></span>
+            </button>
+          </article>
+          -->
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="memo-footer">
+      <div class="shell footer-bottom">
+        <span>© 2026 Zhiwei Yu</span>
+        <a href="../index.html">Return to homepage <span aria-hidden="true">↗</span></a>
+      </div>
+    </footer>
+
+    <script>
+      const memoButtons = document.querySelectorAll(".memo-toggle");
+
+      function setMemoState(button, expanded) {
+        const panel = document.getElementById(button.getAttribute("aria-controls"));
+        const entry = button.closest(".memo-entry");
+        if (!panel || !entry) return;
+
+        button.setAttribute("aria-expanded", String(expanded));
+        button.querySelector(".memo-toggle-label").textContent = expanded ? "Show Less" : "Read More";
+        panel.hidden = !expanded;
+        entry.classList.toggle("is-open", expanded);
+      }
+
+      memoButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          setMemoState(button, button.getAttribute("aria-expanded") !== "true");
+        });
+      });
+
+      function openMemoFromHash() {
+        if (!window.location.hash) return;
+        const entry = document.querySelector(window.location.hash);
+        const button = entry?.querySelector(".memo-toggle");
+        if (button) setMemoState(button, true);
+      }
+
+      document.querySelectorAll('.memo-index a[href^="#"]').forEach((link) => {
+        link.addEventListener("click", () => {
+          const entry = document.querySelector(link.getAttribute("href"));
+          const button = entry?.querySelector(".memo-toggle");
+          if (button) setMemoState(button, true);
+        });
+      });
+
+      window.addEventListener("hashchange", openMemoFromHash);
+      openMemoFromHash();
+    </script>
+  </body>
+</html>

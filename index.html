@@ -1,174 +1,425 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Zhiwei Yu studies closed-loop, long-horizon intelligent interaction through world models, embodied AI, memory, and adaptation."
+    />
+    <meta name="theme-color" content="#0b0612" />
+    <link rel="canonical" href="https://yuzhiwei-v.github.io/" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230b0612'/%3E%3Ccircle cx='32' cy='32' r='18' fill='none' stroke='%23ad7bff' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%2382f6dc'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./gallery.js" defer></script>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yuzhiwei-v.github.io/" />
+    <meta property="og:title" content="Zhiwei Yu · Intelligent Interaction in Dynamics" />
+    <meta
+      property="og:description"
+      content="Closed-loop intelligence for long-horizon interaction in changing environments."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Zhiwei Yu · Intelligent Interaction in Dynamics" />
+    <meta
+      name="twitter:description"
+      content="Closed-loop intelligence for long-horizon interaction in changing environments."
+    />
+    <title>Zhiwei Yu · Intelligent Interaction in Dynamics</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="aurora" aria-hidden="true"></div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zhiwei - Exploring the World </title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-    <!-- Scroll Progress -->
-    <div class="scroll-progress" id="scrollProgress"></div>
-
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">
-                <img src="images/My_Puppy.png" alt="Logo" class="logo-img">
-                <span>Zhiwei's Homepage</span>
-            </a>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#publications">Publications</a></li>
-            </ul>
+    <header class="site-header shell">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Zhiwei Yu home">
+          <span class="brand-orbit" aria-hidden="true"></span>
+          Zhiwei Yu
+        </a>
+        <div class="nav-links">
+          <a data-secondary href="#interests">Research interests</a>
+          <a data-secondary href="#work">Selected work</a>
+          <a class="memo-link" href="./memos/index.html">Memos <span aria-hidden="true">↗</span></a>
+          <a
+            class="scholar-link"
+            href="https://scholar.google.com/citations?user=h6rZDMkAAAAJ&hl=en"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Google Scholar <span aria-hidden="true">↗</span>
+          </a>
         </div>
-    </nav>
+      </nav>
+    </header>
 
-    <!-- Main Content -->
-    <div class="main-content">
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <div class="profile-image">
-                    <img src="images/back.jpg" alt="Profile" class="profile-img">
-                </div>
-                <div class="hero-text">
-                    <h1>Zhiwei Yu</h1>
-                    <div class="title">Exploring the World</div>
-                    <div class="affiliation">Senior Researcher at Multimodal Interaction Research Center<br>Beijing Academy of Artificial Intelligence</div>
-                    <div class="contact-links">
-                        <a href="mailto:yuzhiwei.v@gmailcom" class="contact-link">Email</a>
-                        <a href="https://scholar.google.com/citations?user=h6rZDMkAAAAJ" class="contact-link">Google
-                            Scholar</a>
-                        <a href="https://github.com/yuzhiwei-v" class="contact-link">GitHub</a>
-                        <a href="https://www.semanticscholar.org/author/Zhiwei-Yu/2114173" class="contact-link">Semantic Scholar</a>
-                    </div>
-                </div>
+    <main id="main-content">
+      <section class="hero shell" id="top">
+        <div class="hero-content">
+          <p class="eyebrow">
+            <span class="pulse" aria-hidden="true"></span>
+            Exploring the world
+          </p>
+          <h1>Zhiwei <em>Yu.</em></h1>
+          <div class="hero-about-copy">
+            <p>
+              I design smart systems—digital or embodied—to turn real-world chaos into innovation—where AI, product,
+              and business collide. My research interests span World Modeling, Embodied AI, and Knowledge Computing.
+            </p>
+            <p>
+              Previously, I graduated from
+              <a href="http://www.aais.pku.edu.cn/" target="_blank" rel="noreferrer">AAIS</a> and
+              <a href="https://www.wict.pku.edu.cn/" target="_blank" rel="noreferrer">WICT</a> at Peking University,
+              advised by <a href="https://wanxiaojun.github.io/" target="_blank" rel="noreferrer">Xiaojun Wan</a>.
+              Then I joined
+              <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia" target="_blank" rel="noreferrer">MSRA</a>
+              as a researcher working in
+              <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=cDF07aYAAAAJ&amp;view_op=list_works" target="_blank" rel="noreferrer">Chin-Yew Lin</a>'s
+              team. During my stay in MS, I drove research on Knowledge Base and steered AI integration across flagship
+              products such as Office, Bing and Windows.
+            </p>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">
+              Explore selected work <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              class="button"
+              href="https://scholar.google.com/citations?user=h6rZDMkAAAAJ&hl=en"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Google Scholar <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button" href="./memos/index.html">
+              Read memos <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="portrait-system">
+          <div class="portrait-halo" aria-hidden="true"></div>
+          <div class="portrait-frame">
+            <img src="./assets/images/zhiwei-world.jpg" alt="Zhiwei Yu looking toward a mountain landscape" />
+          </div>
+          <div class="identity-card">
+            <span class="identity-role">Senior Researcher</span>
+            <span>Multimodal Interaction Research Center</span>
+            <span>Beijing Academy of Artificial Intelligence</span>
+          </div>
+          <span class="trajectory-label" aria-hidden="true">Percept · Act · Verify · Adapt</span>
+        </div>
+        <p class="scroll-note">A research practice for dynamic worlds</p>
+      </section>
+
+      <section class="section" id="interests">
+        <div class="shell">
+          <div class="section-heading">
+            <p class="section-index">01 / Research interests</p>
+            <h2><em>Intelligent Interaction in Dynamics</em></h2>
+          </div>
+
+          <div class="thesis-intro">
+            <p class="thesis-lead">
+              Evolving Intelligence for an Ever-Changing World.
+            </p>
+            <div class="thesis-copy">
+              <p>
+                Real environments do not hold still. People differ, conditions shift, feedback arrives late, and a
+                once-valid plan can become unsafe or infeasible.
+              </p>
+              <p>
+                My research focuses on systems that take verifiable actions under uncertainty and continually revise
+                themselves through interaction.
+              </p>
             </div>
-        </section>
+          </div>
 
-        <!-- About Section -->
-        <section id="about" class="section about">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-text">
-                I design smart systems—digital or embodied— to turn real-world chaos into innovation—where AI,
-                product, and business collide. My research interests span World Modeling, Embodied AI, and Knowledge Computing. My recent focus is Generalizable Embodied AI, investigating adaptive strategies for continual learning in 
-dynamic and evolving environments.
-                <br><br>
-                Previously, I graduated from <a href="http://www.aais.pku.edu.cn/">AAIS</a> and <a href="https://www.wict.pku.edu.cn/">WICT</a> 
-                at Peking University, advised by <a href="https://wanxiaojun.github.io/">Xiaojun Wan</a>. Then I joined <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia">MSRA</a> as a researacher working in  <a href="https://scholar.google.com/citations?hl=zh-CN&user=cDF07aYAAAAJ&view_op=list_works">Chin-Yew Lin</a>'s team. During my stay in MS, I drove research on Knowledge Base and steered AI integration across flagship products such as Office, Bing and Windows.
+          <div class="interaction-loop" aria-label="Grounding, experience, and adaptation interaction loop">
+            <article class="pillar pillar-grounding">
+              <div class="node" aria-hidden="true"></div>
+              <span class="pillar-number">01</span>
+              <h3>Grounding</h3>
+              <p>Anchor concepts in the current world: its state, affordances, physical constraints, and causes.</p>
+            </article>
+            <article class="pillar pillar-experience">
+              <div class="node" aria-hidden="true"></div>
+              <span class="pillar-number">02</span>
+              <h3>Experience</h3>
+              <p>Turn feedback into updated beliefs, useful memory, and skills that can be reused beyond one task.</p>
+            </article>
+            <article class="pillar pillar-adaptation">
+              <div class="node" aria-hidden="true"></div>
+              <span class="pillar-number">03</span>
+              <h3>Adaptation</h3>
+              <p>Make experience persist across tasks, time, and individuals without resetting the intelligent system.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="shell">
+          <div class="research-loop-strip" aria-label="Research themes">
+            <span>01 · Lifelong Agents</span>
+            <span>02 · World Models &amp; Memory</span>
+            <span>03 · Human–AI Symbiosis</span>
+          </div>
+
+          <div class="works-grid">
+            <article class="work-card work-card--clustered">
+              <div
+                class="work-media work-gallery"
+                data-gallery
+                role="region"
+                aria-roledescription="carousel"
+                aria-label="Lifelong Agents research visuals"
+              >
+                <div class="work-gallery-track" aria-live="polite">
+                  <figure class="work-slide" id="switch-slide-1">
+                    <img
+                      class="demo-image"
+                      src="./assets/images/work-switch.png"
+                      alt="SWITCH benchmark spanning interface understanding, action reasoning, verification, and recovery"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <figure class="work-slide" id="switch-slide-2" hidden>
+                    <img
+                      class="demo-image"
+                      src="./assets/images/work-switch-long-horizon-planning.png"
+                      alt="Robust long-horizon embodied planning through memory, DynamicEnvPlan, and recovery supervision"
+                      loading="lazy"
+                    />
+                  </figure>
+                </div>
+                <div class="work-gallery-dots" role="group" aria-label="Choose a Lifelong Agents visual">
+                  <button
+                    class="work-gallery-dot is-active"
+                    type="button"
+                    aria-label="Show Lifelong Agents visual 1 of 2"
+                    aria-controls="switch-slide-1"
+                    aria-current="true"
+                  ></button>
+                  <button
+                    class="work-gallery-dot"
+                    type="button"
+                    aria-label="Show Lifelong Agents visual 2 of 2"
+                    aria-controls="switch-slide-2"
+                  ></button>
+                </div>
+              </div>
+              <div class="work-content">
+                <p class="work-meta">Research theme 01</p>
+                <h3>Lifelong Agents</h3>
+                <p class="work-phase">Benchmark · Closed-loop systems · Recovery</p>
+                <p class="work-description">
+                  Long-horizon interaction requires more than completing a prescribed sequence. We study how agents
+                  perceive changing state, verify consequences, recover from failure, and turn execution experience into
+                  supervision—from diagnostic benchmarks to systems that can improve over time.
+                </p>
+
+                <div class="work-cluster-list">
+                  <section class="work-cluster-item" aria-labelledby="switch-title">
+                    <div class="work-cluster-head">
+                      <h4 id="switch-title">SWITCH</h4>
+                      <span class="work-publication-status">v0 · ICLR 2026 Lifelong Agents</span>
+                      <span class="work-publication-status">v1 · EMNLP 2026</span>
+                    </div>
+                    <p>Benchmarking modeling and handling of tangible interfaces in long-horizon embodied scenarios.</p>
+                    <div class="work-cluster-links">
+                      <a href="https://arxiv.org/pdf/2511.17649" target="_blank" rel="noreferrer">Paper <span aria-hidden="true">↗</span></a>
+                      <a href="https://huggingface.co/datasets/BAAI-Agents/SWITCH" target="_blank" rel="noreferrer">Project <span aria-hidden="true">↗</span></a>
+                    </div>
+                  </section>
+
+                  <section class="work-cluster-item" aria-labelledby="dynamicenvplan-title">
+                    <div class="work-cluster-head">
+                      <h4 id="dynamicenvplan-title">From Failures to Supervision</h4>
+                      <span class="work-publication-status">Under review</span>
+                    </div>
+                    <p>A closed-loop planning system that learns robust recovery from dynamic execution failures.</p>
+                    <div class="work-cluster-links">
+                      <a href="https://arxiv.org/pdf/2608.00613" target="_blank" rel="noreferrer">Paper <span aria-hidden="true">↗</span></a>
+                      <a href="https://github.com/yuzhiwei-v/DynamicEnvPlan-for-Robust-Long-Horizon-Embodied-Planning" target="_blank" rel="noreferrer">Project <span aria-hidden="true">↗</span></a>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </article>
+
+            <article class="work-card work-card--clustered">
+              <div class="work-media work-gallery">
+                <div class="work-gallery-track">
+                  <figure class="work-slide" id="memory-slide-1">
+                    <img
+                      class="demo-image"
+                      src="./assets/images/work-memory.png"
+                      alt="Memory for long-horizon embodied interaction across causal knowledge graphs, benchmarks, and models"
+                      loading="lazy"
+                    />
+                  </figure>
+                </div>
+              </div>
+              <div class="work-content">
+                <p class="work-meta">Research theme 02</p>
+                <h3>World Models &amp; Memory</h3>
+                <p class="work-phase">World state · Structured knowledge · Long-term memory</p>
+                <p class="work-description">
+                  Intelligent systems need representations that preserve what has changed, explain why it changed, and
+                  retrieve the knowledge that matters now. This theme connects semantically rich world models, memory
+                  roles, and retrieval-augmented reasoning across physical and digital environments.
+                </p>
+
+                <div class="work-cluster-list">
+                  <section class="work-cluster-item" aria-labelledby="world-model-title">
+                    <div class="work-cluster-head">
+                      <h4 id="world-model-title">Semantically Rich World Models</h4>
+                      <span class="work-publication-status">Under review · ICLR 2027</span>
+                    </div>
+                    <p>World representations that expose meaningful state and interaction structure for physical planning.</p>
+                    <div class="work-cluster-links">
+                      <a href="https://arxiv.org/pdf/2608.22294" target="_blank" rel="noreferrer">Paper <span aria-hidden="true">↗</span></a>
+                      <a href="https://calebcheng819.github.io/SR-WM-Project-Page/" target="_blank" rel="noreferrer">Project <span aria-hidden="true">↗</span></a>
+                    </div>
+                  </section>
+
+                  <section class="work-cluster-item" aria-labelledby="memory-roles-title">
+                    <div class="work-cluster-head">
+                      <h4 id="memory-roles-title">Memory Makes the Difference</h4>
+                      <span class="work-publication-status">EMNLP 2026 · GLM Workshop</span>
+                    </div>
+                    <p>Evaluating how distinct memory roles shape behavior, accuracy, and personalization in agents.</p>
+                    <div class="work-cluster-links">
+                      <a href="https://arxiv.org/pdf/2606.25361" target="_blank" rel="noreferrer">Paper <span aria-hidden="true">↗</span></a>
+                      <a href="https://github.com/audreycs/MemoryEffect" target="_blank" rel="noreferrer">Project <span aria-hidden="true">↗</span></a>
+                    </div>
+                  </section>
+
+                  <section class="work-cluster-item" aria-labelledby="tiara-title">
+                    <div class="work-cluster-head">
+                      <h4 id="tiara-title">TIARA</h4>
+                      <span class="work-publication-status">EMNLP 2022</span>
+                    </div>
+                    <p>Multi-grained retrieval for robust reasoning and generalization over large knowledge bases.</p>
+                    <div class="work-cluster-links">
+                      <a href="https://aclanthology.org/2022.emnlp-main.555/" target="_blank" rel="noreferrer">Paper <span aria-hidden="true">↗</span></a>
+                      <a href="https://github.com/microsoft/KC/tree/main/papers/TIARA" target="_blank" rel="noreferrer">Project <span aria-hidden="true">↗</span></a>
+                    </div>
+                  </section>
+
+                  <section class="work-cluster-item" aria-labelledby="retrack-title">
+                    <div class="work-cluster-head">
+                      <h4 id="retrack-title">ReTraCk</h4>
+                      <span class="work-publication-status">ACL-IJCNLP 2021 · Demo</span>
+                    </div>
+                    <p>A modular retriever–transducer–checker framework for efficient knowledge-base reasoning.</p>
+                    <div class="work-cluster-links">
+                      <a href="https://aclanthology.org/2021.acl-demo.39/" target="_blank" rel="noreferrer">Paper <span aria-hidden="true">↗</span></a>
+                      <a href="https://github.com/microsoft/KC/tree/main/papers/ReTraCk" target="_blank" rel="noreferrer">Project <span aria-hidden="true">↗</span></a>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </article>
+
+            <article class="work-card work-card--clustered">
+              <div class="work-media work-gallery work-gallery--symbiosis" data-gallery role="region" aria-roledescription="carousel" aria-label="Human–AI Symbiosis research visuals">
+                <div class="work-gallery-track" aria-live="polite">
+                  <figure class="work-slide" id="symbiosis-slide-1">
+                    <img
+                      class="demo-image"
+                      src="./assets/images/work-human-robot-co-evolution.png"
+                      alt="Human–robot co-evolution: EEG, EMG, tactile and pose signals guide embodied learning and continuous adaptation"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <figure class="work-slide" id="symbiosis-slide-2" hidden>
+                    <img class="demo-image" src="./assets/images/work-machine-humor.png" alt="Machine humor under Human–AI Symbiosis: pun, metaphor, irony and homophonic rewriting through human creativity and AI augmentation" loading="lazy" />
+                  </figure>
+                </div>
+                <div class="work-gallery-dots" role="group" aria-label="Choose a Human–AI Symbiosis visual">
+                  <button class="work-gallery-dot is-active" type="button" aria-label="Show Human–Robot Co-Evolution" aria-controls="symbiosis-slide-1" aria-current="true"></button>
+                  <button class="work-gallery-dot" type="button" aria-label="Show Machine Humor" aria-controls="symbiosis-slide-2"></button>
+                </div>
+              </div>
+              <div class="work-content">
+                <p class="work-meta">Research theme 03</p>
+                <h3>Human–AI Symbiosis</h3>
+                <p class="work-phase">Human signals · Machine humor · Human-centered interaction</p>
+                <p class="work-description">
+                  Human–AI symbiosis connects how machines act with how they communicate. We explore human signals
+                  that guide embodied behavior, alongside humor and creative language that make digital interaction
+                  more expressive and engaging. Together, these directions bring human intent, experience, and
+                  interpretation into the design of intelligent systems.
+                </p>
+
+                <div class="work-cluster-list">
+                  <section class="work-cluster-item" aria-labelledby="neuroembody-title">
+                    <div class="work-cluster-head">
+                      <h4 id="neuroembody-title">NeuroEmbody</h4>
+                      <span class="work-publication-status">Ongoing</span>
+                    </div>
+                    <p>Brain, muscle, vision, and behavior signals that connect human feedback to perception, decisions,
+                      and autonomous action in the physical world.</p>
+                    <div class="work-cluster-links">
+                      <a href="https://braintoken.baai.ac.cn/dataset/NeuroEmbody_A_Large_Scale_Embodied_Multimodal_Dataset_of_Brain_Muscle_Vision_and_Behavior" target="_blank" rel="noreferrer">Project <span aria-hidden="true">↗</span></a>
+                    </div>
+                  </section>
+                  <section class="work-cluster-item" aria-labelledby="machine-humor-title">
+                    <div class="work-cluster-head">
+                      <h4 id="machine-humor-title">Machine Humor &amp; Creative Language</h4>
+                    </div>
+                    <p>Generating puns through ambiguity and semantic incongruity, and exploring metaphor as a related
+                      form of creative expression—toward richer communication between people and machines.</p>
+                    <div class="work-cluster-links">
+                      <a href="https://aclanthology.org/2020.emnlp-main.229/" target="_blank" rel="noreferrer" title="Homophonic Pun Generation with Lexically Constrained Rewriting">Homophonic Puns · Paper <span aria-hidden="true">↗</span></a>
+                      <a href="https://aclanthology.org/N19-1092/" target="_blank" rel="noreferrer" title="How to Avoid Sentences Spelling Boring? Towards a Neural Approach to Unsupervised Metaphor Generation">Metaphor Generation · Paper <span aria-hidden="true">↗</span></a>
+                      <a href="https://aclanthology.org/P18-1153/" target="_blank" rel="noreferrer" title="A Neural Approach to Pun Generation">Neural Pun Generation · Paper <span aria-hidden="true">↗</span></a>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="work-more">
+            <a
+              class="button"
+              href="https://scholar.google.com/citations?user=h6rZDMkAAAAJ&hl=en"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Learn more on Google Scholar <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer id="contact">
+      <div class="shell">
+        <div class="footer-call">
+          <h2>Let’s build intelligence that can <em>keep up.</em></h2>
+          <section class="join-us" aria-labelledby="join-us-title">
+            <div class="join-us-heading">
+              <span aria-hidden="true">🎓</span>
+              <h2 id="join-us-title">Join Us</h2>
             </div>
-        </section>
-
-        <!-- Publications Section -->
-        <section id="publications" class="section publications">
-            <h2 class="section-title">Selected Work</h2>
-
-            <div class="publications-container">
-                <div class="publication-item">
-                    <div class="pub-title">TIARA: Multi-grained Retrieval for Robust Question Answering over Large
-                        Knowledge Bases</div>
-                    <div class="pub-abstract">
-                        Pre-trained language models (PLMs) have shown their effectiveness in multiple scenarios.
-                        However, KBQA remains challenging, especially regarding coverage and generalization settings.
-                        This is due to two main factors: i) understanding the semantics of both questions and relevant
-                        knowledge from the KB; ii) generating executable logical forms with both semantic and syntactic
-                        correctness. In this paper, we present a new KBQA model, TIARA, which addresses those issues by
-                        applying multi-grained retrieval to help the PLM focus on the most relevant KB contexts, viz.,
-                        entities, exemplary logical forms, and schema items. Moreover, constrained decoding is used to
-                        control the output space and reduce generation errors. Experiments over important benchmarks
-                        demonstrate the effectiveness of our approach. TIARA outperforms previous SOTA, including those
-                        using PLMs or oracle entity annotations, by at least 4.1 and 1.1 F1 points on GrailQA and
-                        WebQuestionsSP, respectively.
-                    </div>
-                    <div class="pub-venue">EMNLP, 2022</div>
-                    <div class="pub-links">
-                        <a href="https://arxiv.org/abs/2210.12925" class="pub-link">Paper</a>
-                        <a href="https://github.com/microsoft/KC/tree/main/papers/TIARA" class="pub-link">Code</a>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="pub-title">ReTraCk: A Flexible and Efficient Framework for Knowledge Base Question
-                        Answering</div>
-                    <div class="pub-abstract">
-                        We present Retriever-Transducer-Checker (ReTraCk), a neural semantic parsing framework for large
-                        scale knowledge base question answering (KBQA). ReTraCk is designed as a modular framework to
-                        maintain high flexibility. It includes a retriever to retrieve relevant KB items efficiently, a
-                        transducer to generate logical form with syntax correctness guarantees and a checker to improve
-                        transduction procedure. ReTraCk is ranked at top1 overall performance on the GrailQA leaderboard
-                        and obtains highly competitive performance on the typical WebQuestionsSP benchmark. Our system
-                        can interact with users timely, demonstrating the efficiency of the proposed framework.
-                    </div>
-                    <div class="pub-venue">ACL, 2021</div>
-                    <div class="pub-links">
-                        <a href="https://aclanthology.org/2021.acl-demo.39/" class="pub-link">Paper</a>
-                        <a href="https://github.com/microsoft/KC/tree/main/papers/ReTraCk" class="pub-link">Code</a>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="pub-title">A Neural Approach to Pun Generation</div>
-                    <div class="pub-abstract">
-                        Automatic pun generation is an interesting and challenging text generation task. Previous
-                        efforts rely on templates or laboriously manually annotated pun datasets, which heavily
-                        constrains the quality and diversity of generated puns. Since sequence-to-sequence models
-                        provide an effective technique for text generation, it is promising to investigate these models
-                        on the pun generation task. In this paper, we propose neural network models for homographic pun
-                        generation, and they can generate puns without requiring any pun data for training. We first
-                        train a conditional neural language model from a general text corpus, and then generate puns
-                        from the language model with an elaborately designed decoding algorithm. Automatic and human
-                        evaluations show that our models are able to generate homographic puns of good readability and
-                        quality.
-                    </div>
-                    <div class="pub-venue">ACL, 2018</div>
-                    <div class="pub-links">
-                        <a href="https://aclanthology.org/P18-1153/" class="pub-link">Paper</a>
-                        <a href="https://github.com/ArleneYuZhiwei/Pun-Generation" class="pub-link">Code</a>
-                    </div>
-                </div>
-
-                <div class="learn-more-container">
-                    <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=h6rZDMkAAAAJ"
-                        class="learn-more-btn">Learn More</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Recruitment Section -->
-        <section class="section recruitment">
-            <h2 class="section-title">For Prospective Students</h2>
-            <div class="recruitment-content">
-                <p>I am always looking for motivated graduate students and postdocs to join my research group. If you
-                    are interested in machine learning research, please send me an email with your CV, research
-                    interests, and a brief description of your background.</p>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="footer">
-            <div class="section">
-                    <div class="hiring-info">
-                    <div class="hiring-title">🎓 Join Us</div>
-                    <div class="hiring-text">
-                        I am always looking for outstanding full-time research interns—people with a strong research
-                        mindset, sharp analytical skills, and hands-on system-building expertise—who are eager to bridge
-                        theory and practice. To apply, please reach out to me with your CV to yuzhiwei.v@gmail.com with "Embodied AI Internship Application" in the email subject line.
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <script src="js/script.js"></script>
-</body>
-
+            <p>
+              I am always looking for outstanding full-time research interns—people with a strong research mindset,
+              sharp analytical skills, and hands-on system-building expertise—who are eager to bridge theory and
+              practice. To apply, please reach out to me with your CV to yuzhiwei.v@gmail.com with
+              “Embodied AI Internship Application” in the email subject line.
+            </p>
+          </section>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Zhiwei Yu</span>
+          <span>Beijing · Researching adaptive intelligence</span>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
